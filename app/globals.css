@@ -3,8 +3,6 @@
 :root {
   --background: #06111b;
   --foreground: #f3f7fb;
-  --surface: rgba(255, 255, 255, 0.06);
-  --surface-border: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -21,6 +19,97 @@ body {
   color: var(--foreground);
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   text-rendering: optimizeLegibility;
+}
+
+.activity-markdown {
+  color: rgb(203 213 225);
+}
+
+.activity-markdown > * + * {
+  margin-top: 1rem;
+}
+
+.activity-markdown h1,
+.activity-markdown h2,
+.activity-markdown h3,
+.activity-markdown h4 {
+  color: rgb(248 250 252);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.activity-markdown h1 {
+  font-size: 1.75rem;
+}
+
+.activity-markdown h2 {
+  font-size: 1.5rem;
+}
+
+.activity-markdown h3 {
+  font-size: 1.25rem;
+}
+
+.activity-markdown p,
+.activity-markdown li,
+.activity-markdown blockquote {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.activity-markdown ul,
+.activity-markdown ol {
+  padding-left: 1.25rem;
+}
+
+.activity-markdown ul {
+  list-style: disc;
+}
+
+.activity-markdown ol {
+  list-style: decimal;
+}
+
+.activity-markdown a {
+  color: rgb(110 231 183);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.activity-markdown strong {
+  color: rgb(248 250 252);
+  font-weight: 600;
+}
+
+.activity-markdown hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.activity-markdown code {
+  border-radius: 0.5rem;
+  background: rgba(15, 23, 42, 0.8);
+  padding: 0.15rem 0.45rem;
+  font-size: 0.95em;
+}
+
+.activity-markdown pre {
+  overflow-x: auto;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(2, 6, 23, 0.78);
+  padding: 1rem;
+}
+
+.activity-markdown pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.activity-markdown blockquote {
+  border-left: 3px solid rgba(110, 231, 183, 0.4);
+  padding-left: 1rem;
+  color: rgb(148 163 184);
 }
 
 ::selection {
